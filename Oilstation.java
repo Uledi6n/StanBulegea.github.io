@@ -1,38 +1,41 @@
 import java.util.*;
 class BankAccount{
-        private double balance;
-	public BankAccount(){
-	        this.balance=5000000;
-	}
-	public double getbalance(){
-		return balance;
-	}	
-	public void deduct(double amount){
-		if(amount>balance){
-			System.out.println("Amount is not sufficient:");
-		}else{
-			balance-=amount;
-			System.out.println("\ncost of oils is: "+amount);
-		}
-	}
+				private double balance;
+				
+				public BankAccount(){
+								this.balance=5000000;
+				}
+				public double getbalance(){
+								return balance;
+				}
+				
+				public void deduct(double amount){
+								if(amount>balance){
+												System.out.println("Amount is not sufficient:");
+								}else{
+												balance-=amount;
+												System.out.println("\ncost of oils is: "+amount);
+								}
+				}
 }
+
 class Vehicle{
-	private double amount;
+				private double amount;
 								
-	public Vehicle(double amount){
-		this.amount=amount;
-	}
-	public double getamount(){
-		return amount;
-	}
-	public void setamount(double amount){
-		if (amount>0){
-			this.amount=amount;
-		}else{
-			this.amount=0.0;
-			System.out.println("Nothing entered");
-		}
-	}
+								public Vehicle(double amount){
+												this.amount=amount;
+								}
+								public double getamount(){
+												return amount;
+								}
+								public void setamount(double amount){
+												if (amount>0){
+																this.amount=amount;
+												}else{
+																this.amount=0.0;
+																System.out.println("Nothing entered");
+												}
+								}
 }
 class Ownerofoilstation{
 				private String accountname;
